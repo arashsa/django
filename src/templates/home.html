@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block head_title %}Welcome || {{ block.super }}{% endblock head_title %}
+{% block content %}
+<h1>Home</h1>
+{% if context %}
+    {% for var in num %}
+        <p>{{ var }}</p>
+    {% endfor %}
+{% endif %}
+{% endblock %}
